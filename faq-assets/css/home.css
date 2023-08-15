@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    z-index: 10000;
+}
+
+.mainmain {
+    z-index: 10000;
+}
+
+.logo, .title {
+    font-size: 2em;
+    color : navy;
+    user-select: none;
+}
+
+.nav .nav-a {
+    position: relative;
+    font-size: 1.1em;
+    color: navy;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.nav .btnlogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border : 2px solid navy;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color : navy;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.nav .btnlogin:hover {
+    background: navy;
+    color: white;
+    border-color: white;
+}
+
+.nav .nav-a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background : navy;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+.nav .nav-a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+section {
+    padding: 30px 100px;
+    text-align: justify;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 19px;
+}
+
+.big-title {
+    text-align: center;
+    color: navy;
+    font-size: xx-large;
+    margin-bottom: 19px;
+}
+
+footer {
+    background-color: #fff;
+    color: navy;
+    text-align: center;
+    padding: 10px;
+}
+
+.services-container {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto auto;
+}
+  
+.service-card {
+    border-radius: 15%;
+    z-index: 1;
+    color: navy;
+    background-color: #fff;
+    border-color: navy;
+    border: 6px solid navy;
+    padding: 100px 30px;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transition: .5s;
+}
+
+.service-card:hover {
+    background: navy;
+    color: white;
+    border-color: white;
+    transition: .5s;
+}
+
+.services-container a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #fff;
+    color: navy;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.container{
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.conten {
+    height: inherit;
+}
+
+.container1 {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url('medical-banner-with-doctor-holding-stethoscope\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conten1 {
+    height: inherit;
+    padding: 3%;
+}
+
+.container2{
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url('tables-chairs-blurred_1203-68.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    justify-content: space-evenly;
+}
+
+.conten2 {
+    height: 220px;
+}
+
+.conten2 i{
+    padding-top: 40%;
+    padding-left: 50%;
+}
+
+.conten2 p{
+    margin-left: 15%;
+    margin-top: 5%;
+    text-align: center;
+    font-weight: 900;
+    font-size: large;
+    color: #fff;
+}

@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    z-index: 10000;
+}
+
+.mainmain {
+    z-index: 10000;
+}
+
+.logo, .title {
+    font-size: 2em;
+    color : navy;
+    user-select: none;
+}
+
+.nav .nav-a {
+    position: relative;
+    font-size: 1.1em;
+    color: navy;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.nav .btnlogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border : 2px solid navy;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color : navy;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.nav .btnlogin:hover {
+    background: navy;
+    color: white;
+    border-color: white;
+}
+
+.nav .nav-a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background : navy;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+.nav .nav-a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+section {
+    padding: 30px 80px;
+    text-align: justify;
+}
+
+.title {
+    text-align: center;
+}
+
+.big-title {
+    text-align: center;
+    color: navy;
+    font-size: xx-large;
+    margin-bottom: 19px;
+}
+
+footer {
+    background-color: #fff;
+    color: navy;
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url('reviewbg-transformed.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conten1 {
+    height: inherit;
+    padding: 3%;
+}
+
+.q-contianer {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.que {
+    height: fit-content;
+    padding-left:10%;
+    text-align: justify;
+    padding-right:10%;
+}
+
+.que-inner {
+    margin-bottom: 3%;
+}
+
+.que-inner p {
+    font-weight: 500;
+    font-size: large;
+    color: navy;
+    z-index: 1;
+}
+
+.que::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 43%;
+    height: 68%;
+    background-color: rgba(0, 0, 0, 0.11);
+    backdrop-filter: blur(5px);
+}
+
+.conten1::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 87%;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.11);
+  backdrop-filter: blur(5px);
+}
+
+.signuP {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.signuP .btnlogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border : 2px solid navy;
+    outline: none;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1.1em;
+    color : navy;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.signuP .btnlogin:hover {
+    background: navy;
+    color: white;
+    border-color: white;
+}
