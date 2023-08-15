@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    z-index: 10000;
+}
+
+.mainmain {
+    z-index: 10000;
+}
+
+.logo, .title {
+    font-size: 2em;
+    color : navy;
+    user-select: none;
+}
+
+.nav .nav-a {
+    position: relative;
+    font-size: 1.1em;
+    color: navy;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.nav .btnlogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border : 2px solid navy;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color : navy;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.nav .btnlogin:hover {
+    background: navy;
+    color: white;
+    border-color: white;
+}
+
+.nav .nav-a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background : navy;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+.nav .nav-a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+section {
+    padding: 30px 100px;
+    text-align: justify;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 19px;
+}
+
+.big-title {
+    text-align: center;
+    color: navy;
+    font-size: xx-large;
+    margin-bottom: 19px;
+}
+
+.about {
+    background-attachment: fixed;
+    background-image: url('doctorbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about3 {
+    background-attachment: fixed;
+    background-image: url('doctor-examining-his-young-patient.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services-container {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto auto;
+}
+
+.services-container h3 {
+    margin-top: 10%;
+}
+
+.service-card {
+    border-radius: 15%;
+    z-index: 1;
+    color: navy;
+    background-color: #fff;
+    border-color: navy;
+    border: 6px solid navy;
+    padding: 100px 30px;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transition: .5s;
+}
+
+.service-card:hover {
+    background: navy;
+    color: white;
+    border-color: white;
+    transition: .5s;
+}
+
+.services-container a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #fff;
+    color: navy;
+    text-align: center;
+    padding: 10px;
+}
+
+.container{
+    margin-top: 10px;
+    height: 750px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.conten {
+    height: inherit;
+    padding: 12% 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.conten .btnlogin {
+    height: 50px;
+    background: transparent;
+    border : 2px solid navy;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color : navy;
+    font-weight: 500;
+    transition: .5s;
+    padding: 2% 3%;
+    margin-top: 19px;
+}
+
+.anchor {
+    margin-left: 18%;
+}
+
+.btnlogin:hover {
+    background: navy;
+    color: white;
+    border-color: navy;
+}
+
+.footer-container {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.foot {
+    height: 275px;
+}
+
+.foot i{
+    padding-top: 5%;
+}
+
+.foot p {
+    margin-top: 2%;
+    text-align: center;
+    font-weight: 900;
+    font-size: large;
+    color: navy;
+}
+
+.foot-btnlogin {
+    height: 50px;
+    background: transparent;
+    border : 2px solid navy;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color : navy;
+    font-weight: 500;
+    transition: .5s;
+    margin-top: 19px;
+    padding: 1% 2%;
+}
+
+.foot-btnlogin:hover {
+    background: navy;
+    color: white;
+    border-color: navy;
+}
+
+.foot .fa-brands {
+    margin-right: 2%;
+}
+
+.linktype:hover {
+    cursor: pointer;
+}
