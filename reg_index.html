@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="assets-signin/css/check.css">
+    <script src="https://kit.fontawesome.com/9ab7a857e2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:wght@800&family=Orbitron&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="btn-class">
+            <a href="index.html"><button style="margin-top: 3.8%;margin-left: 5%;transform: translate(-50%, -50%);">Home</button></a>
+        </div><br>
+        <div class="form-class">
+            <h1>Sign Up</h1>
+            <form action="register.php" method="post">
+                <div class="input-class">
+                    <div class="entry">
+                        <i class="fa-solid fa-user" style="color: #3f00a0;"></i>
+                        <input type="text" name="username" placeholder="User Name">
+                    </div>
+                    <div class="entry">
+                        <i class="fa-solid fa-envelope" style="color: #3f00a0;"></i>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="entry">
+                        <i class="fa-solid fa-lock" style="color: #3f00a0;"></i>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="entry">
+                        <i class="fa-solid fa-lock" style="color: #3f00a0;"></i>
+                        <input type="password" placeholder="Confirm Password">
+                    </div>
+                    <div class="entry">
+                        <i class="fa-solid fa-map" style="color: #3f00a0;"></i>
+                        <input type="text" name="city" placeholder="City">
+                    </div>
+                    <div class="entry">
+                        <i class="fa-solid fa-venus-mars" style="color: #3f00a0;"></i>
+                        <select name="gender" id="" class="select-optn" style="width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="entry">
+                        <i class="fa-solid fa-user" style="color: #3f00a0;"></i>
+                        <input type="number" name="mobile" placeholder="Mobile Number">
+                    </div>
+                    <div class="btn-class">
+                        <button>Sign Up</button>
+                    </div><br>
+                    <p>Already have account ? <a href="signin_index.html">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
